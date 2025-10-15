@@ -14,7 +14,7 @@ const Header = () => {
                 tabIndex={-1}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                 <li><Link href={"../signup"}>signup</Link></li>
-                <li><a>Portfolio</a></li>
+                <li><Link href={"../login"}>Log In</Link></li>
                 <li><a>About</a></li>
             </ul>
             </div>
