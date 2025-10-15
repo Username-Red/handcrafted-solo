@@ -1,7 +1,7 @@
 // prisma/seed.js
 // const { PrismaClient } = require("../app/generated/prisma");
 const bcrypt = require("bcryptjs");
-import { PrismaClient } from "../../app/generated/prisma";
+import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
