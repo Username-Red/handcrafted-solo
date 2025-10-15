@@ -26,15 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="cyberpunk">
-      
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral min-h-screen flex flex-col`}
       >
-        <Header/>
-        {children}
-        <Footer/>
+        <Header />
+        {/* Make main content take remaining space */}
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
-      
     </html>
   );
 }
+
