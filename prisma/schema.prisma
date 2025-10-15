@@ -18,13 +18,15 @@ model User {
   id       Int       @id @default(autoincrement())
   name     String
   email    String    @unique
+  password String
   products Product[]
 }
 
 model Product {
-  id     Int    @id @default(autoincrement())
+  id     Int     @id @default(autoincrement())
   name   String
   price  Float
-  user   User   @relation(fields: [userId], references: [id])
+  image  String? // optional field for product image URL
+  user   User    @relation(fields: [userId], references: [id])
   userId Int
 }
