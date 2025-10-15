@@ -26,13 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="cyberpunk">
-      <Header/>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header/>
         {children}
+        <Footer/>
       </body>
-      <Footer/>
+      
     </html>
   );
 }
