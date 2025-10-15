@@ -19,8 +19,9 @@ export default async function SellerPage({ params }: Props) {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">
-        {seller.name ?? "Unknown Seller"}'s Products
-      </h1>
+        {seller.name ?? "Unknown Seller"}&apos;s Products
+    </h1>
+
 
       {seller.products.length === 0 ? (
         <p>No products found for this seller.</p>
