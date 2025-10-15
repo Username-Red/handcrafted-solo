@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import { PrismaClient } from '../generated/prisma'
+import { PrismaClient } from "@/app/generated/prisma";
 
 const prisma = new PrismaClient();
 

@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, price, image }) => {
     <div className="card w-96 bg-white shadow-md hover:shadow-xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-300 ease-in-out hover:rotate-1">
       <figure className="px-10 pt-10">
         <img
-          src={image}
+          src={image || "/images/placeholder.webp"}
           alt={name}
           className="rounded-xl"
         />
