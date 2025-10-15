@@ -31,7 +31,7 @@ const Signup = () => {
     <div className="flex justify-center items-center min-h-screen bg-base-200 p-4">
       <form
         onSubmit={handleSubmit}
-        className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-6 space-y-4"
+        className="fieldset bg-white border-base-300 rounded-box w-xs border p-6 space-y-4"
       >
         <legend className="fieldset-legend text-lg font-bold">Sign Up</legend>
 
