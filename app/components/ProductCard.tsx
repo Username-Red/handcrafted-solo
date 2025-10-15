@@ -10,7 +10,7 @@ export default function ProductCard({ product }: Props) {
   if (!product) return null;
   return (
     <Link href={`/products/${product.id}`} className="block">
-      <div className="border rounded-lg shadow p-4 flex flex-col items-center hover:shadow-lg transition transform hover:-translate-y-2 hover:rotate-1">
+      <div className="bg-white border rounded-lg shadow p-4 flex flex-col items-center hover:shadow-lg transition transform hover:-translate-y-5 hover:rotate-1">
         <Image
           src={`/${product.image}` || "images/placeholder.webp"}
           alt={product.name}
